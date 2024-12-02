@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiarb Calculator Two </title>
+  <link rel="stylesheet" href="multiarb2.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Multiarb Calculator Two </h1>
+    <form id="arbForm">
+      <div class="game">
+        <label>Club 1 Name: <input type="text" id="club1Name" placeholder="Enter Club Name"></label>
+        <label>Over: <input type="number" id="club1Over" placeholder="Odds for Over"></label>
+        <label>Under: <input type="number" id="club1Under" placeholder="Odds for Under"></label>
+      </div>
+      <div class="game">
+        <label>Club 2 Name: <input type="text" id="club2Name" placeholder="Enter Club Name"></label>
+        <label>Over: <input type="number" id="club2Over" placeholder="Odds for Over"></label>
+        <label>Under: <input type="number" id="club2Under" placeholder="Odds for Under"></label>
+      </div>
+      <div class="game">
+        <label>Club 3 Name: <input type="text" id="club3Name" placeholder="Enter Club Name"></label>
+        <label>Over: <input type="number" id="club3Over" placeholder="Odds for Over"></label>
+        <label>Under: <input type="number" id="club3Under" placeholder="Odds for Under"></label>
+      </div>
+      <label>Total Stake: <input type="number" id="totalStake" placeholder="Total Stake"></label>
+      <button type="button" onclick="calculateArb()">Calculate</button>
+    </form>
+    <div id="results">
+      <h2>Results</h2>
+      <table id="resultsTable">
+        <thead>
+          <tr>
+            <th>Combination</th>
+            <th>Stake (₦)</th>
+            <th>Combined Odds</th>
+            <th>Payout (₦)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p id="summary"></p>
+    </div>
+  </div>
+  <script src="multiarb2.js"></script>
+</body>
+</html>
