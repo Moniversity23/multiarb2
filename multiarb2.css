@@ -1,91 +1,122 @@
+/* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #099bf0;
-    margin: 0;
-    padding: 0px;
-    color: #1d6691;
-  }
-  
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #099bf0, #1e88e5);
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+/* Container Styling */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+/* Header Styling */
+h1, h2, h3 {
+  text-align: center;
+  color: #f3e5ab;
+}
+
+/* Form Styling */
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #c9bbdf;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 20px auto 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #2a2a3b;
+  color: #ffffff;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+thead {
+  background-color: #6200ff;
+  color: #ffffff;
+}
+
+/* Game Section Styling */
+.game {
+  background: #3c3c5c;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+/* Summary Paragraph */
+#summary {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: #f3e5ab;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .container {
-    max-width: 100%;
-    margin: 0%;
-    background: #6200ff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
   }
-  .game{
-    max-width: 900px;
-    margin: 5%;
-    background: #c9bbdf;
-    padding: 5px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  h1, h3 {
-    text-align: center;
-  }
-  
-  form {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  input[type="number"] {
-    width: 90%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
+
   button {
-    display: block;
-    width: 90%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  table {
-    width: 90%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    color: #c9bbdf;
-  }
-  
-  table, th, td {
-    border: 1px solid #ddd;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: center;
-  }
-  
-  thead {
-    background-color: #6200ff;
-    color: #c9bbdf;
-  }
-  input[type="text"] {
-    width: 90%;
+    font-size: 14px;
     padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
   }
-  
+
+  th, td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
