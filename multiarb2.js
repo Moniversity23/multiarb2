@@ -5,8 +5,7 @@ function calculateArb() {
     return;
   }
 
-  const gamesContainer = document.getElementById("gamesContainer");
-  const gameDivs = gamesContainer.getElementsByClassName("game");
+  const gameDivs = document.querySelectorAll(".game");
   const outcomes = ["Over", "Under"];
   const combinations = [];
   const combinedOdds = [];
@@ -14,7 +13,7 @@ function calculateArb() {
   const payouts = [];
   const odds = {};
 
-  // Collect data from dynamically added games
+  // Collect data from game sections
   Array.from(gameDivs).forEach((gameDiv, index) => {
     const clubName = document.getElementById(`club${index + 1}Name`).value || `Club ${index + 1}`;
     const overOdd = parseFloat(document.getElementById(`club${index + 1}Over`).value);
